@@ -27,20 +27,19 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
-    @classmethod
-    def validate(cls, attrs):
+
+    def validate(self, attrs):
         data = super().validate(attrs)
         username = attrs.get("username")
         password = attrs.get("password")
         user = authenticate(username=username, password=password)
 
         if user is None:
-            raise serializers.ValidationError("이름 또는 비밀번호가 잘못되었습니다.")
+            raise serializers.ValidationError("해당 유저네임은 없습니다.")
 
         return data
 
-    @classmethod
-    def get_token(cls, user):
+    def get_token(self, user):
         token = super().get_token(user)
         return token
 
@@ -48,4 +47,4 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
 class UserPofileSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = "__all__"
+        fields = ["username", "name", "nickname", "email", "birthday", "gender"]
