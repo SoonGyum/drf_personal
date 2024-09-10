@@ -8,7 +8,7 @@ class User(AbstractUser):
         ("male", "남자"),
         ("female", "여자"),
     )
-    username = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    username = models.CharField(max_length=20, unique=True)
     password = models.CharField(max_length=20, blank=True)
     name = models.CharField(max_length=20, blank=True)
     nickname = models.CharField(max_length=10, unique=True)
