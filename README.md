@@ -27,32 +27,41 @@ Database : Sqlite3<br>
 - - -
 <br>
 <br>
-**[GET]유저 프로필**:<br>
+
+**[GET]유저 프로필** :
+<br>
 1)로그인 시 생성되는 refresh token을 이용하여 access token을 발급받음.<br>
 2)권한을 확인받기 위해 access token을 Authorization -> Bearer Token 값에 입력.<br>
 
 ![image](https://github.com/user-attachments/assets/6e0ff5f1-2515-4f7b-a3a0-05732df9cf18)
 
+
 **[GET]상품 목록조회**:<br>
  - 로그인 불필요(=권한 필요없음). <br>
 ![image](https://github.com/user-attachments/assets/cde7e2e6-1a3c-4e5d-b986-14182fdb4b1d)
+
 - - -
 <br>
 <br>
+
 **[GET]상품 상세조회**:<br>
  - 로그인 불필요(=권한 필요없음).<br>
  ![image](https://github.com/user-attachments/assets/517c3668-7671-489f-aee2-5b04fd8b1f88)
- - - -
+
+- - -
 <br>
 <br>
+
 **상품 등록**:
 1)로그인 시 생성되는 refresh token을 이용하여 access token을 발급받음.<br>
 2)권한을 확인받기 위해 access token을 Authorization -> Bearer Token 값에 입력.<br>
 3)Body로 가서 title, description, username, image(optional) 입력 후 생성<br>
 ![image](https://github.com/user-attachments/assets/f99c95c6-6545-4388-9683-47ec2a196d31)
+ 
  - - -
 <br>
 <br>
+
 **상품 수정**:
 1)로그인 시 생성되는 refresh token을 이용하여 access token을 발급받음.<br>
 2)권한을 확인받기 위해 access token을 Authorization -> Bearer Token 값에 입력.<br>
