@@ -52,7 +52,7 @@ Database : Sqlite3<br>
 <br>
 <br>
 
-**상품 등록**:
+**상품 등록**: <br>
 1)로그인 시 생성되는 refresh token을 이용하여 access token을 발급받음.<br>
 2)권한을 확인받기 위해 access token을 Authorization -> Bearer Token 값에 입력.<br>
 3)Body로 가서 title, description, username, image(optional) 입력 후 생성<br>
@@ -62,10 +62,23 @@ Database : Sqlite3<br>
 <br>
 <br>
 
-**상품 수정**:
+**상품 수정**: <br>
 1)로그인 시 생성되는 refresh token을 이용하여 access token을 발급받음.<br>
 2)권한을 확인받기 위해 access token을 Authorization -> Bearer Token 값에 입력.<br>
 3)수정하려는 product의 pk를 이용하여 이동 ex) api/products/2/
 4)Body로 가서 title, description, image(optional) 입력 후 수정<br>
 ![image](https://github.com/user-attachments/assets/b9473f49-8770-4cd2-ac77-6cab49d07c0b)
 
+ - - -
+<br>
+<br>
+
+**상품 삭제**: <br>
+1)로그인 시 생성되는 refresh token을 이용하여 access token을 발급받음.<br>
+2)권한을 확인받기 위해 access token을 Authorization -> Bearer Token 값에 입력.<br>
+3)삭제하려는 product의 pk를 이용하여 이동 ex) api/products/2/ <br>
+
+![image](https://github.com/user-attachments/assets/a5bc9a08-0b74-4b06-9857-fd13c47b4050)
+
+
+<br>
