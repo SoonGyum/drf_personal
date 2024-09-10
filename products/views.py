@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from products.models import Product
@@ -7,6 +8,9 @@ from products.serializers import ProductSerializer
 
 
 class ProductListAPIView(APIView):
+
+    permission_classes = [IsAuthenticated]
+
     def get(self, request):
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
@@ -20,6 +24,8 @@ class ProductListAPIView(APIView):
 
 
 class ProductDetailAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
     def get_object(self, pk):
         return get_object_or_404(Product, pk=pk)
 
