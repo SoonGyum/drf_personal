@@ -12,3 +12,6 @@
 <br><br>
 **유저 프로필**:
 ![image](https://github.com/user-attachments/assets/6e0ff5f1-2515-4f7b-a3a0-05732df9cf18)
+
+**상품 목록조회**:
+![image](https://github.com/user-attachments/assets/72203643-b7f8-41ad-a04b-4eaecb64729d)
