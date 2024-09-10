@@ -1,3 +1,6 @@
+**DRF 개인과제**
+Pycharm 이용
+
 **[POST]유저회원가입**:<br>
 username, password, name, nickname, email, birthday, gender 모두 입력 받아 user생성.
 ![image](https://github.com/user-attachments/assets/757b1a3b-186e-43b2-9f00-1129d214cb13)
