@@ -10,3 +10,5 @@
 
 ![image](https://github.com/user-attachments/assets/99594775-395b-4f10-a2c9-e8d6d8c4bcc1)
 <br><br>
+**유저 프로필**:
+![image](https://github.com/user-attachments/assets/6e0ff5f1-2515-4f7b-a3a0-05732df9cf18)
