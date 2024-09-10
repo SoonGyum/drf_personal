@@ -1,5 +1,12 @@
-**DRF 개인과제**
-Pycharm 이용
+**DRF 개인과제**<br><br><br>
+**주제** :<br> DRF를 이용하여 기능 구현 후 POSTMAN에서 데이터 확인  <br><br><br>
+**개발환경** : <br>PyCharm <br>
+Framework : Django-Rest-Framework <br>
+Database : Sqlite3<br>
+
+**주요 기능**: 
+
+
 
 **[POST]유저회원가입**:<br>
 username, password, name, nickname, email, birthday, gender 모두 입력 받아 user생성.
