@@ -1,3 +1,4 @@
+from django.contrib.auth import authenticate
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
@@ -29,6 +30,13 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def validate(cls, attrs):
         data = super().validate(attrs)
+        username = attrs.get("username")
+        password = attrs.get("password")
+        user = authenticate(username=username, password=password)
+
+        if user is None:
+            raise serializers.ValidationError("이름 또는 비밀번호가 잘못되었습니다.")
+
         return data
 
     @classmethod
